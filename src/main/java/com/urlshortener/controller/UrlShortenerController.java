@@ -25,6 +25,11 @@ public class UrlShortenerController {
         return ResponseEntity.ok(response);
     }
 
+    @GetMapping("/")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("URL Shortener API is running!");
+    }
+
     @GetMapping("/{shortCode}")
     public ResponseEntity<Void> redirectToOriginal(@PathVariable String shortCode) {
         String originalUrl = service.getOriginalUrl(shortCode);
