@@ -1,0 +1,10 @@
+com\urlshortener\UrlShortenerApplication.class
+com\urlshortener\dto\UrlResponse.class
+com\urlshortener\model\UrlMapping$UrlMappingBuilder.class
+com\urlshortener\controller\UrlShortenerController.class
+com\urlshortener\service\UrlShortenerService.class
+com\urlshortener\dto\UrlResponse$UrlResponseBuilder.class
+com\urlshortener\model\UrlMapping.class
+com\urlshortener\exception\GlobalExceptionHandler.class
+com\urlshortener\dto\UrlRequest.class
+com\urlshortener\repository\UrlMappingRepository.class
