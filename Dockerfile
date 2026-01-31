@@ -5,7 +5,7 @@ COPY . .
 RUN mvn clean package -DskipTests -Pprod
 
 # Run stage
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/url-shortener.jar app.jar
 EXPOSE 8080
